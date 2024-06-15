@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naser Vapes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main header -->
+    <header class="main-header">Welcome to my store</header>
+    <!-- Secondary header identifying my store-->
+    <header class="secondary-header">Our store is on-demand inventory, so we only sell goods when there is a confirmed order from a customer</header>
+
+    <ol>
+        <li>
+            <h1>VAPES</h1>
+            <!-- Image of the vapes -->
+            <img src="c:\Users\Naser\Downloads\vapesj..jfif" width="250px" class="vape-image" alt="Vapes">
+            <!-- Note about age restriction -->
+            <h2>Remember that vapes are only for +18</h2>
+        </li>
+    </ol>
+
+    <!-- Form to collect user information -->
+    <form id="info-form">
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="text" id="vape-type" name="vape-type" placeholder="Enter the vape type and color you want to buy" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Thank you message -->
+    <div id="thank-you-message" style="display: none;">Thank you! We received your information and we will contact you soon.</div>
+    <!-- Error message for underage users -->
+    <div id="error-message" style="display: none; background-color: red; color: white;">Sorry, you can't buy these products because you are less than 18.</div>
+
+    <!-- List to display user data -->
+    <ol id="user-data" style="display: none;">
+        <!-- User data will be appended here -->
+    </ol>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
